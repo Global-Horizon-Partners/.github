@@ -1,0 +1,27 @@
+name: Feature request
+description: Propose a focused improvement.
+title: "feature: "
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, tokens, private configuration, or sensitive logs."
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope
+      description: Describe the smallest useful change.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any current workaround or alternative.
