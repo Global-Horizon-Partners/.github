@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible problem.
+title: "bug: "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, tokens, private configuration, or sensitive logs."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide minimal safe steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Share only non-sensitive context that may help investigate.
